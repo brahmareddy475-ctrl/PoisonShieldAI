@@ -1,4 +1,3 @@
-"""Reproducible offline experiment orchestrator with independent attacker/defender roles."""
 from __future__ import annotations
 import copy
 import json
