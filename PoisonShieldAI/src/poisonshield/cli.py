@@ -1,4 +1,3 @@
-"""CLI: offline-run and full reproducible sweep."""
 from __future__ import annotations
 import argparse
 import json
