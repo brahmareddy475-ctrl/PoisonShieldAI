@@ -531,10 +531,6 @@ PoisonShieldAI/
 
 The framework performs poisoning attack simulation and defense evaluation using local datasets and locally trained models.
 
-It does not interact with remote intrusion detection systems, deployed security appliances, or production network infrastructure.
-
-The defense mechanism operates using trusted training records, mixed training features, an independently trained discriminator, and configured detection thresholds.
-
 ## Implementation Notes
 
 The following implementation details are important:
@@ -554,6 +550,3 @@ This project is distributed under the MIT License.
 
 Dataset copyrights, terms of use, and licenses remain with their respective authors and institutions.
 
-## Acknowledgements
-
-We acknowledge the researchers and institutions responsible for providing the CIC-IDS2017, TON_IoT, and UNSW-NB15 datasets, along with the developers of the open-source machine learning and deep learning libraries used in this project.
