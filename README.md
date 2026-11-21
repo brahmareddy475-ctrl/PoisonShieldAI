@@ -1,5 +1,7 @@
 # PoisonShieldAI / PoisonGenDefNet
 
+[![DOI](https://zenodo.org/badge/1466197434.svg)](https://doi.org/10.5281/zenodo.24411861)
+
 ## GAN-Based Data Poisoning Attack and Defense for Network Intrusion Detection
 
 PoisonShieldAI and PoisonGenDefNet provide an integrated framework for simulating data poisoning attacks and evaluating defense strategies in network intrusion detection systems.
