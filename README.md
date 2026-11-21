@@ -542,7 +542,6 @@ The following implementation details are important:
 - The defense calibration threshold does not guarantee the same clean-data retention rate across the complete training dataset.
 - GAN training results can vary depending on the dataset, model, random seed, and training configuration.
 
-For additional technical details, refer to `IMPLEMENTATION_NOTES.md`.
 
 ## License
 
