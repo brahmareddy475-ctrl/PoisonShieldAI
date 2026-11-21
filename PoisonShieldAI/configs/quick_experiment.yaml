@@ -1,4 +1,3 @@
-# Fast CPU-compatible validation. These are NOT the paper's full-run hyperparameters.
 experiment:
   dataset: synthetic
   data_path: null
