@@ -1,0 +1,55 @@
+# Fast CPU-compatible validation. These are NOT the paper's full-run hyperparameters.
+experiment:
+  dataset: synthetic
+  data_path: null
+  task: binary
+  random_split_seed: 0
+  synthetic_rows: 850
+  max_rows_per_file: 5000
+  output_dir: outputs/quick
+  seed: 0
+  poison_rate: 0.10
+  victim: all
+  device: cpu
+  torch_threads: 2
+  save_models: true
+  include_baselines: true
+  baseline_methods: [spectral, gradient_influence_proxy, deep_knn]
+  write_figures: true
+attack:
+  z_dim: 32
+  batch_size: 64
+  epochs: 6
+  surrogate_epochs: 9
+  learning_rate: 0.0002
+  surrogate_learning_rate: 0.001
+  lambda_weight: 0.5
+  discriminator_steps: 2
+  label_policy: dirty_target_benign
+  categorical_temperature: 0.75
+  max_train_rows: 2500
+  latent_seed: 123
+  class_source: largest_attack
+  baseline_classification_weight: 1.0
+defense:
+  trusted_calibration_fraction: 0.2
+  max_reject_clean: 0.05
+  epochs: 6
+  batch_size: 64
+  learning_rate: 0.0002
+  max_train_rows: 2500
+  dbscan_min_samples: 10
+  dbscan_mode: exact
+  dbscan_exact_max_rows: 15000
+  dbscan_eps_quantile: 0.95
+  max_neighbors_for_audit: 24
+victims:
+  rf_trees: 50
+  rf_max_depth: 16
+  xgb_trees: 50
+  xgb_max_depth: 4
+  cnn_epochs: 7
+  cnn_batch_size: 128
+  cnn_learning_rate: 0.001
+  fgsm_epsilon: 0.035
+  baseline_rejection_multiplier: 1.0

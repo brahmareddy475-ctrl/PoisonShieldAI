@@ -1,0 +1,4 @@
+experiment:
+  dataset: toniot
+  data_path: data/raw/toniot
+  task: multiclass

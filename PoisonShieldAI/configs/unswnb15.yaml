@@ -1,0 +1,4 @@
+experiment:
+  dataset: unswnb15
+  data_path: data/raw/unswnb15
+  task: multiclass
